@@ -1,0 +1,52 @@
+{
+    "name": "alessandrotesoro/wp-diagnostics",
+    "description": "Utility library to handle detection of minimum system requirements in WordPress plugins.",
+    "keywords": [
+        "wordpress",
+        "pressmodo",
+        "sematico"
+    ],
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Alessandro Tesoro",
+            "email": "hello@sematico.com",
+            "homepage": "https://sematico.com",
+            "role": "Founder & MD"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/alessandrotesoro/wp-diagnostics/issues"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sematico\\Diagnostics\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sematico\\Diagnostics\\Tests\\": "tests"
+        }
+    },
+    "require": {
+        "php": ">=7.2"
+    },
+    "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+        "phpunit/phpunit": "^7.0",
+        "symfony/var-dumper": "^5.1",
+        "wp-coding-standards/wpcs": "dev-master"
+    },
+    "config": {
+        "bin-dir": "bin",
+        "sort-packages": true,
+        "preferred-install": {
+            "*": "dist"
+        }
+    },
+    "scripts": {
+        "test": "bin/phpunit"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
