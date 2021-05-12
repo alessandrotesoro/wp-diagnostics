@@ -1,8 +1,6 @@
 ![tests](https://github.com/alessandrotesoro/wp-diagnostics/workflows/Tests/badge.svg)
 ![license](https://img.shields.io/github/license/alessandrotesoro/wp-diagnostics)
 
-<br />
-
 <!-- ABOUT THE PROJECT -->
 ## ℹ️ About WP Diagnostics
 WP Diagnostics is a utility library to handle detection of minimum system requirements in WordPress plugins.
@@ -113,7 +111,7 @@ In the above example, we're verifying that WordPress is at least running version
 Alternatively you may add checks using the `addCheck` method.
 
 ```php
-$requirements->addCheck( new WPVersion( '5.7' ) ); 
+$requirements->addCheck( new WPVersion( '5.7' ) );
 ```
 
 #### 6. Stop execution on first fail
@@ -135,7 +133,7 @@ $requirements = new Runner(
 Alternatively, you may use the `setBreakOnFailure` method.
 
 ```php
-$requirements->setBreakOnFailure( true ); 
+$requirements->setBreakOnFailure( true );
 ```
 
 #### 7. Messages customization
@@ -272,7 +270,7 @@ class RegistrationActive extends AbstractCheck implements CheckInterface {
 		if ( ! get_option( 'users_can_register' ) ) {
 			return new WP_Error( 'my-error', 'My error message here' );
 		}
-		
+
 		return true;
 	}
 

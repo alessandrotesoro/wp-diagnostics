@@ -8,7 +8,14 @@
 /changelog.md         export-ignore
 /composer.lock        export-ignore
 /contributing.md      export-ignore
+/.travis.yml          export-ignore
+/phpcs.xml            export-ignore
+/phpunit.xml.dist     export-ignore
+/readme.md            export-ignore
 /.vscode      	      export-ignore
+/tests      	      export-ignore
+/bin      	      	  export-ignore
+/.github      	      export-ignore
 
 * text eol=lf
 *.gif binary
